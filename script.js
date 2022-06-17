@@ -21,15 +21,22 @@
 // user must select at least 1 prompt or throw an error
 // return info and send to generate pw
 
-//var characters = []
+// var characters = ["qwertyuiopasdfghjklzxcvbnm", "QWERTYUIOPASDFGHJKLZXCVBNM", "123456789", "!@#$&()<>"]
 
-//function gpwp() {
-    var length = prompt("How many characters? Min 8 Max 128", "enter here");
+// //function pprompts() {
+//     var length = prompt("How many characters? Min 8 Max 128", "enter here");
 
-      if (length < 8 || length > 128) {
-        alert("Invalid Response");
-        gpwp();
-      }
+//       if (length < 8 || length > 128 || length != "number") {
+//         alert("Invalid Response");
+        
+//       } else {
+         var lower = confirm("lowercase characters?")
+//         var upper = confirm("UPPERCASE CHARACTERS?")
+//         var numeric = confirm("123456789?")
+//         var special = confirm("!@#$&()<>")
+//       }
+
+      //confirm(length)
   //  }
 
 //console.log()
