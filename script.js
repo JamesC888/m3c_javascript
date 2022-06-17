@@ -14,18 +14,41 @@
 // WHEN the password is generated
 // THEN the password is either displayed in an alert or written to the page
 
-// Assignment Code
-var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+// generate a prompt        prompt()
+// prompt will ask length of pw 8-128
+// prompts for upper/lower/numbers/special
+// user must select at least 1 prompt or throw an error
+// return info and send to generate pw
 
-  passwordText.value = password;
+//var characters = []
 
-}
+//function gpwp() {
+    var length = prompt("How many characters? Min 8 Max 128", "enter here");
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+      if (length < 8 || length > 128) {
+        alert("Invalid Response");
+        gpwp();
+      }
+  //  }
+
+//console.log()
+
+
+
+// // Assignment Code
+// var generateBtn = document.querySelector("#generate");
+
+
+// // Write password to the #password input
+// function writePassword() {
+//   var password = generatePassword();
+//   var passwordText = document.querySelector("#password");
+
+//   passwordText.value = password;
+
+// }
+
+// // Add event listener to generate button
+// generateBtn.addEventListener("click", writePassword);
 
