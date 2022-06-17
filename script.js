@@ -17,26 +17,31 @@
 
 // ----generate a prompt        prompt()
 // ----prompt will ask length of pw 8-128
-// ----prompts for upper/lower/numbers/special
+// ----prompts for upper/lower/numbers/special]
 //  -?-user must select at least 1 prompt
 // -?- return info and send to generate pw
 
 // var characters = ["qwertyuiopasdfghjklzxcvbnm", "QWERTYUIOPASDFGHJKLZXCVBNM", "123456789", "!@#$&()<>"]
+// var expression1 = (length != "number");
+// var expression2 = (length > 128);
+// var expression3 = (length < 8);
 
 function passwordPrompt() {
-     var length = prompt("How many characters? Min 8 Max 128", "enter here");
+     var length = prompt("How many characters? \nMin 8 Max 128", "enter here");
 
-       if (length < 8 || length > 128 || length != "number") {
-         //alert("Invalid Response");
-        
-       } 
+       if (length < 8 && length > 128) {
+        alert("Invalid Response");
+        //passwordPrompt()
+      };    // typeof number
+
+       
          var lower = confirm("lowercase characters?");
          var upper = confirm("UPPERCASE CHARACTERS?");
          var numeric = confirm("123456789?");
          var special = confirm("!@#$&()<>");
-         //var create = createPassword(lower, upper, numeric, special)  
-  }
-// length x createPassword....?
+        // var create = createPassword(lower, upper, numeric, special)  
+  };
+ //length x create
 passwordPrompt()
 
 
