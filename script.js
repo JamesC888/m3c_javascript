@@ -24,17 +24,17 @@
 // var characters = ["qwertyuiopasdfghjklzxcvbnm", "QWERTYUIOPASDFGHJKLZXCVBNM", "123456789", "!@#$&()<>"]
 
 // //function pprompts() {
-//     var length = prompt("How many characters? Min 8 Max 128", "enter here");
+     var length = prompt("How many characters? Min 8 Max 128", "enter here");
 
-//       if (length < 8 || length > 128 || length != "number") {
-//         alert("Invalid Response");
+       if (length < 8 || length > 128 || length != "number") {
+        // alert("Invalid Response");
         
-//       } else {
-         var lower = confirm("lowercase characters?")
-//         var upper = confirm("UPPERCASE CHARACTERS?")
-//         var numeric = confirm("123456789?")
-//         var special = confirm("!@#$&()<>")
-//       }
+       } 
+         var lower = confirm("lowercase characters?");
+         var upper = confirm("UPPERCASE CHARACTERS?");
+         var numeric = confirm("123456789?");
+         var special = confirm("!@#$&()<>");
+       
 
       //confirm(length)
   //  }
