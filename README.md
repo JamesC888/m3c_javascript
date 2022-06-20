@@ -3,4 +3,4 @@ This is a password generator I built. It takes multiple paramters set by the use
 
 ![Generator Screenshot](./JCPG.png)
 
-[Check it out here!]()
+[Check it out here!](https://jamesc888.github.io/m3c_javascript/)
